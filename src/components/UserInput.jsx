@@ -9,7 +9,7 @@ const UserInput = ({ onChange, userInput }) => {
           <input
             type="number"
             required
-            value={userInput.initialInvestment}
+            value={userInput.initialInvestment || ""}
             onChange={(e) => onChange("initialInvestment", e.target.value)}
           />
         </p>
@@ -18,7 +18,7 @@ const UserInput = ({ onChange, userInput }) => {
           <input
             type="number"
             required
-            value={userInput.annualInvestment}
+            value={userInput.annualInvestment || ""}
             onChange={(e) => onChange("annualInvestment", e.target.value)}
           />
         </p>
@@ -30,7 +30,7 @@ const UserInput = ({ onChange, userInput }) => {
           <input
             type="number"
             required
-            value={userInput.expectedReturn}
+            value={userInput.expectedReturn || ""}
             onChange={(e) => onChange("expectedReturn", e.target.value)}
           />
         </p>
@@ -39,7 +39,7 @@ const UserInput = ({ onChange, userInput }) => {
           <input
             type="number"
             required
-            value={userInput.duration}
+            value={userInput.duration || ""}
             onChange={(e) => onChange("duration", e.target.value)}
           />
         </p>
